@@ -11,8 +11,8 @@
     tools:context="com.jash.frescodemo.MainActivity">
 
     <com.facebook.drawee.view.SimpleDraweeView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
         app:placeholderImage="@mipmap/ic_launcher"
         app:placeholderImageScaleType="centerInside"
@@ -20,5 +20,8 @@
         app:failureImageScaleType="fitXY"
         app:actualImageScaleType="fitCenter"
         app:roundedCornerRadius="10dp"
+        app:pressedStateOverlayImage="@color/blue"
+        app:overlayImage="@mipmap/ic_launcher"
+        android:clickable="true"
         android:id="@+id/drawee"/>
 </RelativeLayout>
